@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar-widget {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d5d7d9;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    transition: width 0.3s, padding 0.3s;
+    width: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-widget:hover {
+    width: 150px;
+    padding: 10px 20px;
+}
+
+.contact-us {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sidebar-widget {
+        top: auto;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        width: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .sidebar-widget:hover {
+        width: 100%;
+        padding: 10px;
+    }
+}
