@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* min-height: 100vh;  */
+  display: block;
+ 
+  padding: 20px;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 20px 30px 120px;
+  background: #5164a7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ 
+  max-height: 80vh;
+}
+
+.form.login {
+  position: absolute;
+  left: 50%;
+  bottom: -86%;
+ padding: 20px 140px;
+  border-radius: 50%;
+  height: 100%;
+  background: #fff;
+ 
+}
+
+.form header {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form.login header {
+  color:#5164a7;
+  opacity: 0.6;
+}
+
+
+form input[type="submit"]:hover {
+  background: #3b4c7d; /* Background color on hover */
+  color: #e0e0e0; /* Text color on hover */
+  /* transform: translateY(-5px); Slight lift effect */
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* */
+}
+
+
+
+form input {
+   display: block; 
+  width: calc(100% - 30px);
+  height: 45px;
+  outline: none;
+  border: none;
+  margin: 10px 15px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color:#5164a7;
+  border-radius: 8px;
+  background: #fff;
+  
+}
+
+.form.login input {
+  border: 1px solid #aaa;
+}
+
+.form.login input:focus {
+  box-shadow: 0 1px 0 #ddd;
+}
+
+form .checkbox {
+  margin: 0px 0px;
+  text-align: left;
+  display:inline;
+  
+}
+
+.checkbox input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  accent-color: #fff;
+  cursor: pointer;
+  display: inline;
+}
+
+form .checkbox label {
+  cursor: pointer;
+  color: #fff;
+  padding-left: 10px;
+}
+
+form a {
+  display: block;
+  margin: 10px 15px;
+  color:white;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form input[type="submit"] {
+  display: block;
+ 
+  height: 50px;
+  margin: 15px 15px;
+  padding: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+.form.login input[type="submit"] {
+  background: #5164a7;
+  color: #fff;
+  border: none;
+}
+
+#forgot{float: right;
+
+}
+body{
+  background: radial-gradient(circle, #5164a7, #7a85d3);
+  
+}
+
+
+    </style>
+</head>
+<body>
+  <img src="logonew.png" height="100%" width="100px">
+    <section class="wrapper" id="signup" >
+        <div  class="form signup" >
+          <header>Login</header>
+          <form action="#">
+           
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <a href="#" id="forgot">Forgot password?</a>
+            
+      <div class="checkbox">
+              <input type="checkbox" id="signupCheck" checked />
+              <label for="signupCheck" >Remember me</label>
+              
+                <input type="submit" value="Login" />
+                <a href="signup.html" class="switch">Don't have an account? Signup</a>
+              </form>
+          </div>
+          </section>
+            
+          </form>
+        </div>
+    </section>
+   
+      
+</body>
+</html>
+
+    
+ 

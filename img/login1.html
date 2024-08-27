@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="form-container">
+        <div class="form" id="signup">
+          <header>Signup</header>
+          <form action="#">
+            <input type="text" placeholder="Full name" required />
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Enter password again" required />
+            <div class="checkbox">
+              <input type="checkbox" id="signupCheck" checked />
+              <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" />
+            <a href="#login" class="switch">Already have an account? Login</a>
+          </form>
+        </div>
+      
+        <div class="form" id="login">
+          <header>Login</header>
+          <form action="#">
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Login" />
+            <a href="#signup" class="switch">Don't have an account? Signup</a>
+          </form>
+        </div>
+      </section>
+<style>
+    body {
+  background: #f0faff;
+  padding: 20px;
+}
+
+#form-container {
+  position: relative;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+/* General form styling */
+.form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px 120px;
+  background: #5164a7;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+/* Show signup form by default */
+#signup {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+
+/* Show the targeted form and hide the other */
+#signup:target,
+#login:target {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+
+#signup:target ~ #signup,
+#login:target ~ #login {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
+form input {
+  display: block;
+  width: calc(100% - 30px);
+  height: 30px;
+  outline: none;
+  border: none;
+  margin: 10px 15px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5164a7;
+  border-radius: 8px;
+  background: #fff;
+}
+
+form input[type="submit"] {
+  background: #fff;
+  color: #5164a7;
+  border: none;
+  cursor: pointer;
+  margin: 15px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+form a {
+  display: block;
+  margin: 10px 15px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+.form header {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+</style>      
+</body>
+</html>
